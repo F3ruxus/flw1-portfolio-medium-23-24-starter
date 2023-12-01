@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- imports JS file -->
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
 
     <!-- imports Google font -->
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 </head>
 <body>
+  <!-- IDs are made to be used once and specific to one element
+  Classes are great for use in CSS -->
     <!-- Add navbar to link all html pages. -->
     <!-- 
         Add contact info, including:
@@ -24,20 +26,52 @@
         - Resume (when completed) 
     -->
     <nav>
-        <button class="btn">Home</button>
-        <button class="btn">About Me</button>
-        <button class="btn">Projects</button>
-        <button class="btn">Contact</button>
+        <button class="homebtn">Home</button>
+        <button class="mebtn">About Me</button>
+        <button class="projectbtn">Projects</button>
+        <button class="contactbtn">Contact</button>
     </nav>
 
+  
     <div class="content">
-        <p>Your Contact Banner</p>
-        <p>Any message you want to put.</p>
+        <p class="bigText">Wanna talk? Here are some places where you can find me! ;D</p>
+      <div class="innerContent">
+        <ul>
+          <li><a href="https://github.com/F3ruxus">My Github</a></li>
+          <li><a href="juangarcia2564417@gmail.com">My Email</a></li>
+          <!-- <li><a href="contact.asp">LinkedIn</a></li>
+          <li><a href="about.asp">Resume</a></li> -->
+        </ul>
+      </div>
     </div>
+
+    
     <br>
     <br>
 
+    <script>
+      let home = document.querySelector(".homebtn");
+      let aboutMe = document.querySelector(".mebtn");
+      let projects = document.querySelector(".projectbtn");
+      let contactInfo = document.querySelector(".contactbtn");
 
+      home.onclick = function(){
+        document.location.href = "/index.html";
+      }
+
+      aboutMe.onclick= function(){
+        document.location.href = "/about.html"; 
+        }
+
+      projects.onclick=function(){
+          document.location.href = "/projects.html"; 
+
+      }
+
+      contactInfo.onclick= function(){
+        document.location.href= "/contact.html";
+      }
+    </script>
   </body>
 
     <!-- Add a footer to your website for it to look more authentic. -->

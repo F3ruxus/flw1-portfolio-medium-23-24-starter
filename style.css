@@ -3,8 +3,17 @@
 /* Format the size of all images. */
 
 /* Style the font color. */
-
+  .homeBanner {
+    font-color: deepskyblue;
+    font-family: "Robot", monospace;
+  }
 /* Style the background with a color or image. */
+  body {
+    Background-image:url("https://th.bing.com/th/id/OIP.9fIP-cj1FxnbtN6IBG1cmgAAAA?rs=1&pid=ImgDetMain");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
 
 /* Adjust the spacing of your page. */
 
@@ -14,16 +23,25 @@
 * {
     box-sizing: border-box;
   }
+
+  .image-box {
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .bigText {
+    font-size: 20px;
+  }
   
   body {
-    background-color: #f9d60e;
+    background-color: #000000;
     padding: 20px;
     font-family: Arial;
   }
   
   .heading{
     background-color: #373738;
-    color: #efeff2;
+    color: #000000;
     padding: 1em;
   }
   
@@ -41,11 +59,41 @@
     background-color: #272b30;
     margin: 20px;
     padding: 10px;
-    color: white;
+    color: deepskyblue;
+  }
+  .innerContent {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    color: deepskyblue;
   }
 
 
-  .btn {
+  .homebtn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .mebtn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .projectbtn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .contactbtn {
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -63,7 +111,7 @@
   footer {
     background-color: #272b30;
     padding: 20px;
-    color: white;
+    color:deepskyblue;
     text-align: center;
     font-size: 1em;
     border-radius: 10px;

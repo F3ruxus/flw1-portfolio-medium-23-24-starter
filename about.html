@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- imports JS file -->
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
 
     <!-- imports Google font -->
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
@@ -19,19 +19,52 @@
     <!-- Include a short bio. -->
     <!-- Add an unordered or ordered list of your accomplishments or favorite things. -->
     <nav>
-        <button class="btn">Home</button>
-        <button class="btn">About Me</button>
-        <button class="btn">Projects</button>
-        <button class="btn">Contact</button>
+        <button class="homebtn">Home</button>
+        <button class="mebtn">About Me</button>
+        <button class="projectbtn">Projects</button>
+        <button class="contactbtn">Contact</button>
     </nav>
 
     <div class="content">
-        <p>Your About Banner</p>
-        <p>Any message you want to put.</p>
+        <h2>About Me Page</h2>
+        <p>Curious about me eh? No worries! You're in the right place! ;) </p>
+    </div>
+    <div class="content">
+        <h2>Short Bio of myself.</h2>
+        <p> As of 2023, I am currently a junior at John Hancock College Prep. I am in the school's Hackathon Prep Club, the Debate Team, and the Drone Club! Out of all the classes I've had, my favorite has always been Computer Science or classes related to coding!</p>
+    </div>
+    <div class="content">
+      <p class="bigText"> Pictures of myself </p>
+    </div>
+    <div class="image-box">
+      <iframe alt="A picture of Me!" src="https://drive.google.com/file/d/19ekV6yBpHl8jdc24_5lJW3ZwKGQNxfpr/preview" width="640" height="480" allow="autoplay"></iframe>
+      <iframe alt="A picture of Me!" src="https://drive.google.com/file/d/1LGEWYUGrtAXAP8CEnl8FJrtsVGv-M_Iz/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
     <br>
     <br>
+    <script>
+      let home = document.querySelector(".homebtn");
+      let aboutMe = document.querySelector(".mebtn");
+      let projects = document.querySelector(".projectbtn");
+      let contactInfo = document.querySelector(".contactbtn");
 
+      home.onclick = function(){
+        document.location.href = "/index.html";
+      }
+
+      aboutMe.onclick= function(){
+        document.location.href = "/about.html"; 
+        }
+
+      projects.onclick=function(){
+          document.location.href = "/projects.html"; 
+
+      }
+
+      contactInfo.onclick= function(){
+        document.location.href= "/contact.html";
+      }
+    </script>
 
   </body>
 
